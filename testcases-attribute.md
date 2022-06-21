@@ -950,7 +950,7 @@ IfcNormalisedRatioMeasure(0.5)
 
 [Sample IDS](fail-attributes_are_not_inherited_by_the_occurrence.ids) - [Sample IFC: #21](fail-attributes_are_not_inherited_by_the_occurrence.ifc)
 
-## [PASS] Strict numeric checking may also occur within enumeration restrictions
+## [PASS] Typecast checking may also occur within enumeration restrictions
 
 ~~~xml
 <attribute minOccurs="1" maxOccurs="1">
