@@ -10,9 +10,16 @@ An IDS is a file format ending in `.ids` containing a list of information **Spec
 
 IDS file creation tools and model checking tools are provided by many [software vendors](https://technical.buildingsmart.org/resources/software-implementations/). You can write your own customised IDS **Specifications** from scratch or use a [public IDS templates](todo) as a template. Any IFC model produced from any software can be checked by an IDS file.
 
-To get started quickly, [download a sample IDS file](todo) and load it up in one of the software from our [software vendors](https://technical.buildingsmart.org/resources/software-implementations/) directory.
+## Beginners tutorial
 
-## How to create a specification
+ 1. [Download and install your favourite software](https://technical.buildingsmart.org/resources/software-implementations/) that supports IDS from the software vendors directory. There is software available for Windows, Mac, and Linux.
+ 2. [Download a sample IDS file](todo). This IDS file has two **Specifications**. The first specifies that _the project name_ should be TEST_. The second specifies that _all walls must have a fire rating property_.
+ 3. [Download a sample IFC model to check](todo). This IFC model has "TEST" as the project name, which satisfies the first **Specification**. However, some walls have a fire rating property, and others do not.
+ 4. Load both the IDS and the IFC in your software, and begin the checking process.
+
+As a bonus step, try running the IDS with your own IFC models.
+
+## How to structure a specification
 
 A **Specification** is designed to be easy for humans to understand. However, **Specifications** are also highly structured so that computer software may automatically and accurately check information requirements with no ambiguity. Every **Specification** has three parts:
 
@@ -25,6 +32,8 @@ For example, the **Specification** of "_all walls must have a fire rating proper
  1. **Description**: wall fire ratings are critical for building code compliance
  2. **Applicability**: this specification applies to all wall objects
  3. **Requirements**: the aforementioned wall objects must have a fire rating property
+
+## How specifications can describe information
 
 **Applicability** and **Requirements** can be described in terms of five different **Facets** of information:
 
@@ -51,13 +60,32 @@ All brick wall types must be classified and follow the approved naming conventio
 
 To see the full capabilities of what each information each **Facet** can specify, see the sections below for more detail.
 
-Some information cannot be checked by IDS. For example, geometry checks like "_all walls need to be 3m away from the site boundary_" are not possible. Checks that rely on calculated or dynamic values are also not possible, like "_the total area of all office spaces must be more than 300m2_" or "_the names of all door types must be unique_". These types of advanced **Specifications** are out of scope of IDS.
+## Required and optional specifications
+
+Each **Specification** may also specify whether it is **Required**, **Optional**, or **Prohibited**. Given the example **Specification** of "_all walls must have a fire rating property_" this is the interpretation:
+
+Type | Meaning | Example
+--- | --- | ---
+**Required** | The specified information _must_ be found in the IFC model | The model must have walls, and they must all have a fire rating property
+**Optional** | If there are elements in the IFC model that are applicable to the **Specification**, then the **Requirements** must be satisfied | The model may or may not have walls. If they do, then they must have a fire rating property
+**Prohibited** | The specified information _must not_ be found in the IFC model | The model should not have any walls that have a fire rating property. Walls without a fire rating property are allowed. Other non-wall elements with a fire rating property are also allowed.
+
+## Advanced information requirements
+
+The first version of IDS targets basic information and relationships in IFC that are common to all disciplines. More advanced information requirements are currently out of scope for IDS. For example, geometry checks, checks that rely on calculated or dynamic values, checks that reference data outside the IFC model, or use domain specific IFC relationships are not possible. Here are some types of advanced requirements that you will need other tools to help audit:
+
+ - All walls need to be 3m away from the site boundary
+ - The total area of all office spaces must be more than 300m2
+ - The names of all door types must be unique
+ - All pumps need to have a nominated supplier and manufacturerw
+ - All air handling units must have sensors assigned with trigger events
+ - Saturday and sunday must be a holiday in all work schedules
 
 ## More reading
 
  - [See our directory of publicly available IDS templates to get started](todo)
  - [Learn how to specify complex restrictions](todo)
- - [Learn how to use the **Entity Facet**](todo)
+ - [Learn how to use the **Entity Facet**](entity-facet.md)
  - [Learn how to use the **Attribute Facet**](todo)
  - [Learn how to use the **Classification Facet**](todo)
  - [Learn how to use the **Property Facet**](todo)
