@@ -37,7 +37,7 @@ Facet Type | Facet Parameters | Example applicability | Example requirement
 **Material** | **Value** | Applies to "concrete" elements | Must have a "concrete" material
 **Parts** | **Entity** and **Relationship** | Applies to elements that are "contained in" an "IfcSpace" | Must be "contained in" an "IfcSpace"
 
-You can combine multiple **Facets** together in either the **Applicability** or **Requirements** section to describe a wide variety of **Specifications**. Some **Facets** may have optional parameters. For example, if you want to specify that a property should exist, but not the exact value, you may omit the value parameter of the **Property Facet**.
+You can combine multiple **Facets** together in either the **Applicability** or **Requirements** section to describe a wide variety of **Specifications**. Some **Facets** may have optional **Facet Parameters**. For example, if you want to specify that a property should exist, but not the exact value, you may omit the value parameter of the **Property Facet**.
 
 You may also specify a list of valid values, or a range of numbers, or text pattern for some **Facet Parameters**. These are known as **Complex Restrictions**. For example, you would use a **Complex Restriction** to specify that a fire rating property must choose from either the value "0HR", "1HR", or "2HR" only.
 
@@ -51,50 +51,22 @@ All brick wall types must be classified and follow the approved naming conventio
 
 To see the full capabilities of what each information each **Facet** can specify, see the sections below for more detail.
 
-Some information cannot be checked by IDS. For example, geometry checks like "_all walls need to be 3m away from the site boundary_" are not possible. Checks that rely on calculated or dynamic values are also not possible, like "_the total area of all office spaces must be more than 300m2_" or "_the names of all door types must be unique_" are not possible.
+Some information cannot be checked by IDS. For example, geometry checks like "_all walls need to be 3m away from the site boundary_" are not possible. Checks that rely on calculated or dynamic values are also not possible, like "_the total area of all office spaces must be more than 300m2_" or "_the names of all door types must be unique_". These types of advanced **Specifications** are out of scope of IDS.
 
-### Specifying complex restrictions
+## More reading
 
-TODO
+ - [See our directory of publicly available IDS templates to get started](todo)
+ - [Learn how to specify complex restrictions](todo)
+ - [Learn how to use the **Entity Facet**](todo)
+ - [Learn how to use the **Attribute Facet**](todo)
+ - [Learn how to use the **Classification Facet**](todo)
+ - [Learn how to use the **Property Facet**](todo)
+ - [Learn how to use the **Material Facet**](todo)
+ - [Learn how to use the **Parts Facet**](todo)
 
-### Specifying entities
+## For developers
 
-Every entity in an IFC model has an "IFC Class" **Name**. For example, wall entities will have an IFC class of IfcWall. Classes aren’t just for categorising elements. They also indicate what types of properties and relationships it is allowed to have. For example, a Wall Class can have a fire rating property, but a Grid Class cannot. Here are a list of valid IFC class names:
-
- - [IFC4 list of IFC class names](https://standards.buildingsmart.org/IFC/RELEASE/IFC4/ADD2_TC1/HTML/link/inheritance-general-usage-all%20entities.htm)
- - [IFC2X3 list of IFC class names](https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/alphabeticalorder_entities.htm)
-
-Some entities may also optionally have a **Predefined Type**. This is a further level of entity categorisation in addition to the IFC Class **Name**. For example, an IfcWall may have a **Predefined Type** of SHEAR, or PARTITIONING. Whereas the IFC Class **Name** is specified by the IFC standard, the **Predefined Type** may also contain custom values by the user.
-
-TODO: describe how a user knows what predefined types are possible
-
-One of the most important aspects of writing a specification is to ensure that it applies to the appropriate IFC class.
-
-Parameter | Required | Restrictions Allowed | Allowed Values | Meaning
---- | --- | --- | --- | ---
-**Name** | ✅ | ✅ | A valid IFC class from the IFC schema. | The IFC Class must match exactly
-**Predefined Type** | ❌ | ✅ | A valid predefined type from the IFC schema, or any custom text value. | The IFC Predefined Type must match exactly
-
-#### Examples
-
-Intention | Facet Definition
---- | ---
-All partition walls | Name="IFCWALL", PredefinedType="PARTITIONING"
-All type elements | Name="IFC.*TYPE"
-
-
-### Specifying attributes
-
-### Specifying classifications
-
-### Specifying properties
-
-### Specifying materials
-
-### Specifying parts
-
-## Start using IDS in your projects
-
-## Implementing IDS as a developer
-
-TODO see unit tests, XSD, etc
+ - [Read the implementers guide](todo)
+ - [Download the latest IDS v0.6 XSD schema](todo)
+ - [Check out software test suites](todo)
+ - [Add your implementation to the software vendors directory](todo)
