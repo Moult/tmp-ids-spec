@@ -72,13 +72,15 @@ Type | Meaning | Example
 **Optional** | If there are elements in the IFC model that are applicable to the **Specification**, then the **Requirements** must be satisfied | The model may or may not have walls. If they do, then they must have a fire rating property
 **Prohibited** | The specified information _must not_ be found in the IFC model | The model should not have any walls that have a fire rating property. Walls without a fire rating property are allowed. Other non-wall elements with a fire rating property are also allowed.
 
-## IFC schema version support
+## IFC schema support
 
 Each **Specification** may specify the IFC schema(s) that it applies to. If a model does not match the schema(s), the **Specification** will not apply and will not be audited. The supported IFC schemas are:
 
  - IFC4X3
  - IFC4
  - IFC2X3
+
+IDS assumes that the provided IFC model only contains valid data. If the model has syntax errors or IFC schema validation errors, then the model may not be able to be audited. It is the responsibility of the IFC authoring software to ensure that the produced IFCs are valid.
 
 ## Advanced information requirements
 
