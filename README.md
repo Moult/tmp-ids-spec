@@ -102,7 +102,7 @@ The first version of IDS targets basic information and relationships in IFC that
 
  - [See our directory of publicly available IDS templates to get started](todo)
  - [Guidelines on specifying good **Specification** metadata](ids-metadata.md)
- - [Learn how to specify **Complex Restrictions**](todo)
+ - [Learn how to specify **Complex Restrictions**](restrictions.md)
  - [Learn how to use the **Entity Facet**](entity-facet.md)
  - [Learn how to use the **Attribute Facet**](attribute-facet.md)
  - [Learn how to use the **Classification Facet**](classification-facet.md)
