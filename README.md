@@ -79,14 +79,15 @@ The first version of IDS targets basic information and relationships in IFC that
  - All walls need to be 3m away from the site boundary
  - The total area of all office spaces must be more than 300m2
  - The names of all door types must be unique
- - All pumps need to have a nominated supplier and manufacturerw
+ - All pumps need to have a nominated supplier and manufacturer
  - All air handling units must have sensors assigned with trigger events
  - Saturday and sunday must be a holiday in all work schedules
 
 ## More reading
 
  - [See our directory of publicly available IDS templates to get started](todo)
- - [Learn how to specify complex restrictions](todo)
+ - [Guidelines on specifying good **Specification** metadata](todo)
+ - [Learn how to specify **Complex Restrictions**](todo)
  - [Learn how to use the **Entity Facet**](entity-facet.md)
  - [Learn how to use the **Attribute Facet**](todo)
  - [Learn how to use the **Classification Facet**](todo)
