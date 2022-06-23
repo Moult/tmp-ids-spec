@@ -72,10 +72,19 @@ Type | Meaning | Example
 **Optional** | If there are elements in the IFC model that are applicable to the **Specification**, then the **Requirements** must be satisfied | The model may or may not have walls. If they do, then they must have a fire rating property
 **Prohibited** | The specified information _must not_ be found in the IFC model | The model should not have any walls that have a fire rating property. Walls without a fire rating property are allowed. Other non-wall elements with a fire rating property are also allowed.
 
+## IFC schema version support
+
+Each **Specification** may specify the IFC schema(s) that it applies to. If a model does not match the schema(s), the **Specification** will not apply and will not be audited. The supported IFC schemas are:
+
+ - IFC4X3
+ - IFC4
+ - IFC2X3
+
 ## Advanced information requirements
 
 The first version of IDS targets basic information and relationships in IFC that are common to all disciplines. More advanced information requirements are currently out of scope for IDS. For example, geometry checks, checks that rely on calculated or dynamic values, checks that reference data outside the IFC model, or use domain specific IFC relationships are not possible. Here are some types of advanced requirements that you will need other tools to help audit:
 
+ - There must be no clashes between structural beams and pipes
  - All walls need to be 3m away from the site boundary
  - The total area of all office spaces must be more than 300m2
  - The names of all door types must be unique
@@ -84,6 +93,8 @@ The first version of IDS targets basic information and relationships in IFC that
  - Saturday and sunday must be a holiday in all work schedules
  - All models shall load in under 3 minutes by major software vendors
  - Associated drawings in the model must match the latest revisions in the CDE
+ - All rebar should be modeled as parametric swept disks
+ - The model must match the as-built state of construction
 
 ## More reading
 
