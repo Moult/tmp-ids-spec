@@ -10,12 +10,12 @@ An IDS is a file format ending in `.ids` containing a list of information **Spec
 
 ![IDS Diagram](ids-diagram.png)
 
-IDS file creation tools and model checking tools are provided by many [software vendors](https://technical.buildingsmart.org/resources/software-implementations/). You can write your own customised IDS **Specifications** from scratch or use a [public IDS templates](todo) as a template. Any IFC model produced from any software can be checked by an IDS file.
+IDS file creation tools and model checking tools are provided by many [software vendors](https://technical.buildingsmart.org/resources/software-implementations/). You can write your own customised IDS **Specifications** from scratch or start from a [public IDS template](todo). Any IFC model produced from any software can be checked by an IDS file.
 
 ## Beginners tutorial
 
  1. [Download and install your favourite software](https://technical.buildingsmart.org/resources/software-implementations/) that supports IDS from the software vendors directory. There is software available for Windows, Mac, and Linux.
- 2. [Download a sample IDS file](todo). This IDS file has two **Specifications**. The first specifies that _the project name_ should be TEST_. The second specifies that _all walls must have a fire rating property_.
+ 2. [Download a sample IDS file](todo). This IDS file has two **Specifications**. The first specifies that _the project name should be TEST_. The second specifies that _all walls must have a fire rating property_.
  3. [Download a sample IFC model to check](todo). This IFC model has "TEST" as the project name, which satisfies the first **Specification**. However, some walls have a fire rating property, and others do not.
  4. Load both the IDS and the IFC in your software, and begin the checking process.
 
