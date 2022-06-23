@@ -89,10 +89,10 @@ The first version of IDS targets basic information and relationships in IFC that
  - [Guidelines on specifying good **Specification** metadata](todo)
  - [Learn how to specify **Complex Restrictions**](todo)
  - [Learn how to use the **Entity Facet**](entity-facet.md)
- - [Learn how to use the **Attribute Facet**](todo)
- - [Learn how to use the **Classification Facet**](todo)
+ - [Learn how to use the **Attribute Facet**](attribute-facet.md)
+ - [Learn how to use the **Classification Facet**](classification-facet.md)
  - [Learn how to use the **Property Facet**](todo)
- - [Learn how to use the **Material Facet**](todo)
+ - [Learn how to use the **Material Facet**](material-facet.md)
  - [Learn how to use the **Parts Facet**](todo)
 
 ## For developers
