@@ -12,9 +12,9 @@ Different IFC schemas have different IFC classes. More recent IFC schemas contai
 
 Some entities may also optionally have a **Predefined Type**. This is a further level of entity categorisation in addition to the IFC Class **Name**. For example, an IfcWall may have a **Predefined Type** of SHEAR, or PARTITIONING. Whereas the IFC Class **Name** is specified by the IFC standard, the **Predefined Type** may also contain custom values by the user.
 
-The IFC schema documentation contains a list of standard predefined types. Here is how you might find list of valid **Predefined Types** for the IFC4X3 schema.
+The IFC schema documentation contains a list of standard predefined types. Here is how you might find a list of valid **Predefined Types** for the IFC4X3 schema. The instructions will be similar for all IFC versions.
 
- 1. Browse to the documentation page for the IFC class you are specifying. For example, [this is the IfcWall documentation page](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcWall.htm).
+ 1. Browse to the documentation page for the IFC class you are specifying. You can get there from the list of IFC class names above. For example, [this is the IfcWall documentation page](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcWall.htm).
  2. Scroll down to the **Attributes** section of the documentation and find the **PredefinedType** attribute.
  3. Click on the enumeration link next to the **PredefinedType** attribute to view the list of valid values. For example, for an IfcWall, you will click the link to bring you to [the documentation for IfcWallTypeEnum](http://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcWallTypeEnum.htm).
  4. A list of valid **Predefined Types** are shown in a table.
