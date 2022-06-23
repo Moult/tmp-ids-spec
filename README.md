@@ -82,6 +82,8 @@ The first version of IDS targets basic information and relationships in IFC that
  - All pumps need to have a nominated supplier and manufacturer
  - All air handling units must have sensors assigned with trigger events
  - Saturday and sunday must be a holiday in all work schedules
+ - All models shall load in under 3 minutes by major software vendors
+ - Associated drawings in the model must match the latest revisions in the CDE
 
 ## More reading
 
