@@ -32,11 +32,11 @@ Parameter | Required | Restrictions Allowed | Allowed Values | Meaning
 
 ## Examples
 
-Intention | Facet Definition
---- | ---
-The element (e.g. Project) must be named "ABC123" | Name="Name", value="ABC123"
-The element (e.g. IfcMapConversion) must be geolocated such that the origin is at the Easting of 312345 | Name="Easting", value="312345"
-The naming scheme for the elements must start with "WT" and be followed by two digits, such as WT01, WT02, etc. | Name="Name", Value="WT[0-9]{2}"
-All elements (e.g. door types) must have a description | Name="Description"
-The status (e.g. for an IfcTask) must be filled out with either "NOTSTARTED", "STARTED", or "COMPLETED" | Name="Status", Value=["NOTSTARTED", "STARTED", "COMPLETED"]
-The duration type (e.g. for an IfcTaskTime) must be based on a calendar, not elapsed time | Name="DurationType", Value="WORKTIME"
+Applicability Intention | Requirement Intention | Facet Definition
+--- | --- | ---
+Any entity with a Name of "ABC123" | The entity (e.g. Project) must be named "ABC123" | Name="Name", value="ABC123"
+Any entity (but typically IfcMapConversion) with an Easting of 312345 | The entity (e.g. IfcMapConversion) must be geolocated such that the origin is at the Easting of 312345 | Name="Easting", value="312345"
+Any entity with a name starting with "WT" followed by 2 digits, such as WT01, WT02, etc. | The element must have the naming scheme of WT01, WT02, etc | Name="Name", Value="WT[0-9]{2}"
+Any entity with a non-empty Description | The entity must have a description | Name="Description"
+Any entity (typically an IfcTask) with a Status set to either "NOTSTARTED", "STARTED", or "COMPLETED" | The entity Status (e.g. for an IfcTask) must be filled out with either "NOTSTARTED", "STARTED", or "COMPLETED" | Name="Status", Value=["NOTSTARTED", "STARTED", "COMPLETED"]
+Any entity (typically an IfcTaskTime) with a DurationType set to WORKTIME (i.e. based on a calendar) | The duration type (e.g. for an IfcTaskTime) must be based on a calendar, not elapsed time | Name="DurationType", Value="WORKTIME"
