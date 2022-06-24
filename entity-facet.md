@@ -32,13 +32,13 @@ Parameter | Required | Restrictions Allowed | Allowed Values | Meaning
 
 ## Examples
 
-Intention | Facet Definition
---- | ---
-All partition walls | Name="IFCWALL", PredefinedType="PARTITIONING"
-All floor slabs | Name="IFCSLAB", PredefinedType="FLOOR"
-All door types, such that may be documented in a door types schedule | Name="IFCDOORTYPE"
-All type elements | Name="IFC.*TYPE"
-All building storeys | Name="IFCBUILDINGSTOREY"
-All related documents, such as drawings, schedules, manuals, and specifications | Name="IFCDOCUMENTINFORMATION"
-All distribution systems, such as hot water systems, electrical circuits, etc | Name="IFCSYSTEM"
-All construction tasks, such as in construction scheduling in a work breakdown structure | Name="IFCTASK", PredefinedType="CONSTRUCTION"
+Applicability Intention | Requirement Intention | Facet Definition
+--- | --- | ---
+All partition walls | Must be a partition wall | Name="IFCWALL", PredefinedType="PARTITIONING"
+All floor slabs | Must be a floor slab | Name="IFCSLAB", PredefinedType="FLOOR"
+All door types, such that may be documented in a door types schedule | Must be a door type | Name="IFCDOORTYPE"
+All type elements | Must be a type element | Name="IFC.*TYPE"
+All building storeys | Must be a building storey | Name="IFCBUILDINGSTOREY"
+All related documents, such as drawings, schedules, manuals, and specifications | Must be a document | Name="IFCDOCUMENTINFORMATION"
+All distribution systems, such as hot water systems, electrical circuits, etc | Must be a system | Name="IFCSYSTEM"
+All construction tasks, such as in construction scheduling in a work breakdown structure | Must be a construction task | Name="IFCTASK", PredefinedType="CONSTRUCTION"
