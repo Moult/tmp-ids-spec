@@ -45,17 +45,26 @@ Any software implementing IDS checking **must** comply with the following test s
 
 TODO: specify rules about BCF
 
+## Handling IFC compatibility
+
+If the software is not capable of parsing the specified IFC version nominated by the IDS specification, then the user should be made aware of the limitation.
+
+## Handling different IDS versions
+
+IDS is not yet formally released and so there is no guarantee of vendor support for any IDS version.
+
 ## Available developer libraries
 
-Please feel free to [submit your library](https://github.com/buildingSMART/IDS/pulls).
+To help you get started with development, here is a directory of IDS libraries that you may use in your application. Please feel free to [submit your library](https://github.com/buildingSMART/IDS/pulls).
 
 Language | License | Library
 --- | --- | ---
 C# | ? | [XBim](todo)
 Python | LGPL-3.0-or-later | [IfcOpenShell](todo)
-? | ? | ODA
+? | ? | ODA?
+Javascript | ? | Something or other
 
 ## More reading
 
- - [Add your implementation to the software vendors directory]([todo](https://technical.buildingsmart.org/resources/software-implementations/))
+ - [Add your implementation to the software vendors directory](https://technical.buildingsmart.org/resources/software-implementations/)
  - [Make a suggestion for improvement](https://github.com/buildingSMART/IDS/issues)
