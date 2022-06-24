@@ -117,6 +117,7 @@ The first version of IDS targets basic information and relationships in IFC that
  - [Learn how to use the **Property Facet**](todo)
  - [Learn how to use the **Material Facet**](material-facet.md)
  - [Learn how to use the **Parts Facet**](todo)
+ - [Ask for help on using IDS](https://forums.buildingsmart.org/)
 
 ## For developers
 
@@ -124,3 +125,4 @@ The first version of IDS targets basic information and relationships in IFC that
  - [Download the latest IDS v0.6 XSD schema](todo)
  - [Check out software test suites](todo)
  - [Add your implementation to the software vendors directory](todo)
+ - [Make a suggestion for improvement](https://github.com/buildingSMART/IDS/issues)
