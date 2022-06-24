@@ -23,7 +23,9 @@ Note that even if you specify a list of allowed values, the user can still only 
 
 A **Pattern** restriction represents a naming convention or naming scheme. For example, if you want to specify that door types must be named using the convention DT01, DT02, DT03, etc, you can create a pattern defining that the letters "DT" should be first, followed by two numbers.
 
-Computers have a special way of defining patterns of text called **Regex**. It uses special symbols to tell the computer to expect numbers, letters, or any character. You may already be familiar with computer patterns using the "`*`" character as a wildcard. For example, you might say that the pattern "`DT*`" can be satisfied by the values "`DTA`", "`DTB`", or even "`DT01`". **Regex** is a bit more complex, but in exchange, you can be more specific about the rules in your pattern. Here are some common examples you can use:
+Computers have a special way of defining patterns of text called **Regex**. It uses special symbols to tell the computer to expect numbers, letters, or any character. You may already be familiar with computer patterns using the "`*`" character as a wildcard. For example, you might say that the pattern "`DT*`" can be satisfied by the values "`DTA`", "`DTB`", or even "`DT01`". **Regex** is a bit more complex, but in exchange, you can be more specific about the rules in your pattern. Investing in learning **Regex** is highly recommended, given the importance of naming conventions in the AEC industry.
+
+Here are some common examples you can use:
 
 Pattern | Description | Example values that meet the pattern criteria | Example values that fail the pattern
 --- | --- | --- | ---
