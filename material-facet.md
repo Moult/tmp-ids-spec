@@ -24,10 +24,10 @@ If no parameters are specified, then it means that any **Material** should be pr
 
 ## Examples
 
-Intention | Facet Definition
---- | ---
-The element must have a material | No parameters
-All wood elements, or the element must be made out of wood | Value="wood"
-All brick elements, or the element must be made out of brick | Value="brick"
-All foundation piles must be made of either concrete or steel | Value=["concrete", "steel"]
-The element shall have a material with the naming scheme of "CON" followed by two digits, such as CON01, CON02, etc. | Value="CON[0-9]{2}"
+Applicabiity Intention | Requirement Intention | Facet Definition
+--- | --- | ---
+Any entity with a material | The entity must have a material | No parameters
+All entities made from wood | The entity must be made out of wood | Value="wood"
+All entities made from brick | The entity must be made out of brick | Value="brick"
+All entities made from either concrete or steel | The entity (e.g. foundation piles) must be made of either concrete or steel | Value=["concrete", "steel"]
+Any entities with a material named with a code starting with "CON" followed by 2 digits, like CON01, CON02, etc | The entity shall have a material with the naming scheme of "CON" followed by two digits, such as CON01, CON02, etc. | Value="CON[0-9]{2}"
