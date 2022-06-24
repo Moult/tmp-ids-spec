@@ -117,7 +117,7 @@ The first version of IDS targets basic information and relationships in IFC that
  - [Learn how to use the **Property Facet**](todo)
  - [Learn how to use the **Material Facet**](material-facet.md)
  - [Learn how to use the **Parts Facet**](todo)
- - [Ask for help on using IDS](https://forums.buildingsmart.org/)
+ - [Still stuck? Ask for help on using IDS](https://forums.buildingsmart.org/)
 
 ## For developers
 
