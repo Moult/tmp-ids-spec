@@ -37,7 +37,7 @@ For example, the **Specification** of "_all walls must have a fire rating proper
 
 ## How specifications can describe information
 
-**Applicability** and **Requirements** are described using **Facets**. A **Facet** describes information that a single entity (e.g. wall, door, etc) in your model may have.
+**Applicability** and **Requirements** are described using **Facets**. A **Facet** describes information that a single entity (e.g. wall, door, etc) in your model may have. A **Facet** describes its information precisely using fixed **Facet Parameters** so that computers can understand exactly what information you are after.
 
 When a **Facet** is used in the **Applicability** section, the **Facet** describes information that an entity needs to have for the **Specification** to be **Applicable** to the entity.
 
