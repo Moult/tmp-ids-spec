@@ -7,11 +7,17 @@ When specifying a **Facet Parameter**, you may either specify a **Simple Value**
  - Bounds
  - Length
  - Total digits
- - Decimal places
+ - Fraction digits
 
 ## Enumeration
 
-An **Enumeration** restriction means that the value must be one of a list of allowed values. For example, you might want to specify that a material may be either "concrete" or "steel". You may also specify numbers in a list, such as specifying that a concrete strength grade may be either "25", "30", "35, or "40".
+An **Enumeration** restriction means that the value must be one of a list of allowed values. For example, you might want to specify that a material may be either "concrete" or "steel".
+
+Numbers may also be specified as a list. For example, you may specify that a concrete strength grade may be either "25", "30", "35, or "40". If the user has the value of "30", then that will comply with your **Enumeration**. However, if they choose "31", then it does not.
+
+Booleans may also be specified, such as "TRUE" or "FALSE". However, it is generally meaningless to specify a boolean as an enumeration because the nature of a boolean implies that the user always has to choose either "TRUE" or "FALSE".
+
+Note that even if you specify a list of allowed values, the user can still only choose one value from that list.
 
 ## Pattern
 
@@ -35,3 +41,21 @@ Pattern | Description | Example values that meet the pattern criteria | Example 
 
  - [Beginners Regex tutorial](https://regexone.com/)
  - [Online Regex testing website](https://regex101.com/)
+
+## Bounds
+
+A **Bounds** restriction allows you to specify that the value is a number and has to fall within a range of values. You can specify either a minimum, maximum, or both. You can also specify whether the minimum or maximum is inclusive (e.g. `>=` and `<=`) or exclusive (e.g. `>` and `<`). For example, you might specify that a value needs to be "more than 3" and "less than or equal to 10".
+
+## Length
+
+A **Length** restriction specifies the exact number of characters allowed in a value. For example, if you specify a length of 3, then values that are three characters long, like "`ABC`" or "`123`", will meet your requirement. Other values, like "`AB`" or "`ABC123`" will not meet your requirement.
+
+Note that it is also possible to achieve the same effect by specifying a **Pattern**, such as "`.{3}`", however, the **Length** restriction is simpler and quicker to compute.
+
+## Total digits
+
+A **Total Digits** restriction specifies the total number of digits allowed in a value, regardless of negative signs or decimal points. For example, a **Total Digits** of 3 mean that "`123`", "`-123`", and "`1.23`" all meet the requirement.
+
+## Fraction digits
+
+A **Fraction Digits** restriction specifies the precision of the digits allowed after the decimal point. For example, a value of 3 means that "`12`", "`12.3`", "`12.34`", and "`12.345`" are all allowed, since they have three or less digits after the decimal point. However, "`12.3456`" is not allowed. Note that "`12.3450`", "`12.34500`", etc are all equivalent to "`12.345`", so they are also allowed. However, "`12.3450001`" is not equivalent so it is not allowed.
