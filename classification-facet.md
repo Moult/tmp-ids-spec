@@ -19,10 +19,10 @@ If no parameters are specified, then it means that any **Classification** should
 
 ## Examples
 
-Intention | Facet Definition
---- | ---
-Any classified element, or the element must be classified | No parameters
-The element must be classified using OmniClass | System="OmniClass"
-The element must be classified using either OmniClass or Uniclass 2015 | System=["OmniClass", "Uniclass 2015"]
-The element (e.g. a wall) must be classified using the reference "EF_25_10_25" | Value="EF_25_10_25"
-The element (e.g. a wall) must use Uniclass 2015 and have are reference starting with EF_25_10 | System="Uniclass 2015", Value="EF_25_10.*"
+Applicability Intention | Requirement Intention | Facet Definition
+--- | --- | ---
+Any classified element | The entity must be classified | No parameters
+Any entity classified using OmniClass | The entity must be classified using OmniClass | System="OmniClass"
+Any entity classified with either OmniClass or Uniclass 2015 | The entity must be classified using either OmniClass or Uniclass 2015 | System=["OmniClass", "Uniclass 2015"]
+Any entity with a classification reference of "EF_25_10_25" | The element (e.g. a wall) must be classified using the reference "EF_25_10_25" | Value="EF_25_10_25"
+Any element with a Uniclass 2015 classification reference starting with EF_25_10 | The entity (e.g. a wall) must use Uniclass 2015 and have are reference starting with EF_25_10 | System="Uniclass 2015", Value="EF_25_10.*"
