@@ -43,6 +43,8 @@ When a **Facet** is used in the **Applicability** section, the **Facet** describ
 
 When a **Facet** is used in the **Requirements** section, the **Facet** describes information that an entity needs to have to comply with the **Specification**.
 
+![IDS Structure](ids-structure.png)
+
 There are five different **Facets** of information:
 
 Facet Type | Facet Parameters | Example applicability | Example requirement
